@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JP Stevens Cyberhawks</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1 class="title">CYBERHAWKS</h1>
+      <p class="subtitle">JP Stevens High School • Computer Science Club</p>
+    </div>
+    <nav class="top-nav" aria-label="primary">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#sectors" class="nav-link">Sectors</a>
+      <a href="#calendar" class="nav-link">Calendar</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="hero-card glow">
+      <img class="flyer" src="assets/images/flyer.png" alt="Cyberhawks flyer with GC code, advisors, and sector blurbs" />
+      <div class="hero-info">
+        <h2>Welcome to Cyberhawks</h2>
+        <ul class="key-info">
+          <li><strong>Google Classroom Code:</strong> <span class="gc-code">5sggvgrx</span></li>
+          <li><strong>Advisors:</strong> Ms. Manning &amp; Ms. McLeod</li>
+          <li><strong>Meetings:</strong> Every Monday!</li>
+        </ul>
+        <p class="note"></p>
+      </div>
+    </div>
+  </main>
+
+  <section id="sectors" class="section">
+    <h2 class="section-title">Club Sectors</h2>
+
+    <div class="tabs" role="tablist" aria-label="Cyberhawks Sectors">
+      <button class="tab active" role="tab" aria-selected="true" aria-controls="panel-competitive" id="tab-competitive">
+        Competitive Programming
+      </button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="panel-webgame" id="tab-webgame">
+        Web/Game Development
+      </button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="panel-ml" id="tab-ml">
+        Machine Learning
+      </button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="panel-cyber" id="tab-cyber">
+        Cybersecurity
+      </button>
+    </div>
+
+    <!-- Panels with verbatim text from the flyer image -->
+    <div class="panels">
+      <article id="panel-competitive" class="panel active" role="tabpanel" aria-labelledby="tab-competitive">
+        <h3>Competitive Programming</h3>
+        <ul class="verbatim">
+          <li>Participate in coding competitions &amp; win prizes!</li>
+        </ul>
+        <div class="badges">
+          <span class="badge">ACSL</span>
+          <span class="badge">USACO</span>
+        </div>
+      </article>
+
+      <article id="panel-webgame" class="panel" role="tabpanel" aria-labelledby="tab-webgame" hidden>
+        <h3>Web &amp; Game Design</h3>
+        <ul class="verbatim">
+          <li>Learn new programming languages</li>
+          <li>Make your very own games!</li>
+          <li>Learn how to make a website!</li>
+        </ul>
+      </article>
+
+      <article id="panel-ml" class="panel" role="tabpanel" aria-labelledby="tab-ml" hidden>
+        <h3>Machine Learning</h3>
+        <ul class="verbatim">
+          <li>Learn fundamental AI Theory!</li>
+          <li>Use research tools used by professionals!</li>
+        </ul>
+      </article>
+
+      <article id="panel-cyber" class="panel" role="tabpanel" aria-labelledby="tab-cyber" hidden>
+        <h3>Cybersecurity</h3>
+        <ul class="verbatim">
+          <li>Develop skills in encryption, networks, and ethical hacking!</li>
+          <li>Participate in cybersecurity competitions &amp; win awards!</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="calendar" class="section">
+    <h2 class="section-title">2025–2026 Calendar</h2>
+    <figure class="calendar-figure glow">
+      <img src="assets/images/calendar.png" alt="Cyberhawks calendar image" />
+      <figcaption></figcaption>
+    </figure>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <p>Questions? Bring them to our Monday meeting or post in Google Classroom (<span class="gc-code-inline">5sggvgrx</span>).</p>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> JP Stevens Cyberhawks</p>
+  </footer>
+</body>
+</html>
